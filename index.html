@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Complete Responsive Pizza Shop Website Design</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pizza.</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#menu">Menu</a>
+         <a href="#order">Order</a>
+         <a href="#faq">Faq</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section >
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>You are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>Pizza-1 <span>( 169/- x 2 )</span></p>
+         <p>Pizza 03 <span>( 179/- x 1 )</span></p>
+         <p>Pizza 06 <span>( 259/- x 4 )</span></p>
+         <p>Pizza 07 <span>( 175/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="Enter your E-mail" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your Password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="Enter your Name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="Enter your E-mail" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your Password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="Confirm your Password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>placed on : <span>10/11/2024</span> </p>
+         <p>name : <span>Tanu Agarwal</span> </p>
+         <p>number : <span>6206569561</span></p>
+         <p>address : <span>B 72,Mitra Enclave, Greater Noida, Uttar Pradesh, India - 201310</span></p>
+         <p>payment method : <span>Cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 169/- x 2, pizza 03 179/- x 1, pizza 06 259/- x 4, pizza 07, 175/- x 1</span></p>
+         <p>total price : <span>........./-</span></p>
+         <p>payment status : <span style="color: var(--red);">Pending</span> </p>
+      </div>
+
+      <div class="box">
+         <p>placed on : <span>10/11/2024</span> </p>
+         <p>name : <span>Sneha singh</span> </p>
+         <p>number : <span>6206569561</span></p>
+         <p>address : <span>B 72,Mitra Enclave, Greater Noida, Uttar Pradesh, India - 201310</span></p>
+         <p>payment method : <span>Cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 169/- x 2, pizza 03 179/- x 1, pizza 06 259/- x 4, pizza 07, 175/- x 1</span></p>
+         <p>total price : <span>........./-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>Close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>pizza-1 <span>( 169/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>pizza-3 <span>( 179/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>pizza-6 <span>( 259/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>pizza-7 <span>( 175/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>homemade Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.svg" alt="">
+         <h3>made with love</h3>
+         <p>"Pain itself is something we experience, but it is an honor to be among those who can offer great service. The light that shines can sometimes be hard to bear, yet we continue to work diligently despite challenges!"</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.svg" alt="">
+         <h3>30 minutes delivery</h3>
+         <p>"Pain itself is love, sitting with a blessed purpose. The light that is loved does not appear to be made. Times are laboriously rejected!"</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.svg" alt="">
+         <h3>share with freinds</h3>
+         <p>"Pain itself is love; it speaks to the blessed nature of being. The light that is beloved does not seem to exist. Times are laboriously denied!"</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">Rs.<span>169</span>/-</div>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="name">pizza 1</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>339</span>/-</div>
+         <img src="images/pizza-2.jpg" alt="">
+         <div class="name">pizza 2</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>179</span>/-</div>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="name">pizza 3</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>249</span>/-</div>
+         <img src="images/pizza-4.jpg" alt="">
+         <div class="name">pizza 4</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>189</span>/-</div>
+         <img src="images/pizza-5.jpg" alt="">
+         <div class="name">pizza 5</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>259</span>/-</div>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="name">pizza 6</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>175</span>/-</div>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="name">pizza 7</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>249</span>/-</div>
+         <img src="images/pizza-8.jpg" alt="">
+         <div class="name">pizza 8</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs.<span>249</span>/-</div>
+         <img src="images/pizza-9.jpg" alt="">
+         <div class="name">pizza 9</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>pizza-1 <span>( Rs.169/- x 2 )</span></p>
+         <p>pizza 03 <span>( Rs.179/- x 1 )</span></p>
+         <p>pizza 06 <span>( Rs.259/- x 4 )</span></p>
+         <p>pizza 07 <span>( Rs.175/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>Your Name :</span>
+            <input type="text" name="name" class="box" required placeholder="Enter Your Name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>Your Number :</span>
+            <input type="number" name="number" class="box" required placeholder="Enter Your Number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>Payment Method</span>
+            <select name="method" class="box">
+               <option value="Cash On Delivery">Cash On Delivery</option>
+               <option value="Credit Card">Credit Card</option>
+               <option value="Paytm">Paytm</option>
+               <option value="Paypal">Paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Address Line 01 :</span>
+            <input type="text" name="Flat" class="box" required placeholder="e.g. Flat No." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Address Line 02 :</span>
+            <input type="text" name="Street" class="box" required placeholder="e.g. Street Name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Pin Code :</span>
+            <input type="number" name="Pin_Code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="Submit" value="Order Now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>How Does It Work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Its totally dependends upon various things like Ordering, Prepration, Dispatch, Delivery, Payment, Enjoying
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How Long Does It Take For Delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            The time it takes for pizza delivery can vary based on several factors: Resturant Location, Order Volume, Prepration Time, Traffic & Weather.
+	    Typically, pizza delivery takes anywhere from 30 minutes to an hour. Many restaurants aim for around 30 to 45 minutes for standard deliveries. If you’re curious about a specific place, they often provide estimated delivery times when you place your order.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Can I Order For Huge Parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Absolutely! Many pizza restaurants and delivery services offer options for large orders, which are perfect for parties. Here’s how you can do it: Contact the Resturant, Choose your Sizes, Place the Order in Advanced, Ask about Discounts.  
+         </p>
+
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How Much Protein It Contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            The protein content in pizza can vary widely based on the ingredients and portion size. Here are some general estimates : Standard Cheese Pizza, Meat Topping, Crust Type, Serving Size
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Is It Cooked With Oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Yes, oil is commonly used when making pizza, Using oil in these ways helps create the texture and taste that make pizza so delicious!
+
+
+
+
+
+
+
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>Phone Number</h3>
+         <p>+91-6206569561</p>
+         <p>+91-9523837534</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Our Address</h3>
+         <p>Greter noida,Uttar Pradesh, India - 201310</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>Opening Hours</h3>
+         <p>00:09am to 00:10pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>Email Address</h3>
+         <p>amarjeet.ak1234@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2024 by <span>mr. web designer</span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
